@@ -96,6 +96,25 @@ export default function Home() {
                 </form>
             </div>
 
+            <form className="flex items-center space-x-6">
+                <div className="shrink-0">
+                    <Image
+                        className="h-16 w-16 rounded-full object-cover"
+                        src=""
+                        alt="Current profile photo"
+                        width={32}
+                        height={32}
+                    />
+                </div>
+                <label className="block">
+                    <span className="sr-only">Choose profile photo</span>
+                    <input
+                        type="file"
+                        className="block w-full text-sm text-slate-500 file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100"
+                    />
+                </label>
+            </form>
+
             <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
                 <a
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
