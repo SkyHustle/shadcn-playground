@@ -23,6 +23,37 @@ export default function Home() {
                 />
             </div>
 
+            <a
+                href="#"
+                className="group mx-auto block max-w-xs space-y-3 rounded-lg bg-white p-6 shadow-lg ring-1 ring-slate-900/5 hover:bg-sky-500 hover:ring-sky-500"
+            >
+                <div className="flex items-center space-x-3">
+                    <svg
+                        className="h-6 w-6 stroke-sky-500 group-hover:stroke-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    ></svg>
+                    <h3 className="text-sm font-semibold text-slate-900 group-hover:text-white">
+                        New project
+                    </h3>
+                </div>
+                <p className="text-sm text-slate-500 group-hover:text-white">
+                    Create a new project from a variety of starting templates.
+                </p>
+            </a>
+
+            <form>
+                <label className="block">
+                    <span className="block text-sm font-medium text-slate-700">
+                        Email
+                    </span>
+                    <input type="email" className="... peer" />
+                    <p className="invisible mt-2 text-sm text-pink-600 peer-invalid:visible">
+                        Please provide a valid email address.
+                    </p>
+                </label>
+            </form>
+
             <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
                 <a
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
