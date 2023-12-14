@@ -79,6 +79,23 @@ export default function Home() {
                 </div>
             </fieldset>
 
+            <div className="mx-auto max-w-sm bg-white px-6 pb-5 pt-6 shadow">
+                <form>
+                    <label className="block">
+                        <span className="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']">
+                            Email
+                        </span>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            className="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                            placeholder="you@example.com"
+                        />
+                    </label>
+                </form>
+            </div>
+
             <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
                 <a
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
