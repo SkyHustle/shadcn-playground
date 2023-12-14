@@ -115,6 +115,90 @@ export default function Home() {
                 </label>
             </form>
 
+            <div className="-mb-3 mt-4">
+                <div className="not-prose relative overflow-hidden rounded-xl bg-slate-50 dark:bg-slate-800/25">
+                    <div
+                        className="bg-grid-slate-100 dark:bg-grid-slate-700/25 absolute inset-0 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"
+                        style={{ backgroundPosition: "10px 10px" }}
+                    ></div>
+                    <div className="relative overflow-auto rounded-xl">
+                        <div className="grid grid-cols-1 sm:grid-cols-2">
+                            <div className="p-8 pt-7">
+                                <p className="mb-2 text-sm font-medium text-slate-500">
+                                    Light mode
+                                </p>
+                                <div className="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                                            <svg
+                                                className="h-6 w-6 text-white"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-5 text-base font-medium tracking-tight text-slate-900">
+                                        Writes Upside-Down
+                                    </h3>
+                                    <p className="mt-2 text-sm text-slate-500">
+                                        The Zero Gravity Pen can be used to
+                                        write in any orientation, including
+                                        upside-down. It even works in outer
+                                        space.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-slate-900 p-8 pt-7">
+                                <p className="mb-2 text-sm font-medium text-slate-400">
+                                    Dark mode
+                                </p>
+                                <div className="rounded-lg bg-slate-800 px-6 py-8 shadow-xl ring-1 ring-slate-900/5">
+                                    <div>
+                                        <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                                            <svg
+                                                className="h-6 w-6 text-white"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                                aria-hidden="true"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 className="mt-5 text-base font-medium tracking-tight text-white">
+                                        Writes Upside-Down
+                                    </h3>
+                                    <p className="mt-2 text-sm text-slate-400">
+                                        The Zero Gravity Pen can be used to
+                                        write in any orientation, including
+                                        upside-down. It even works in outer
+                                        space.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="pointer-events-none absolute inset-0 rounded-xl border border-black/5 dark:border-white/5"></div>
+                </div>
+            </div>
+
             <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
                 <a
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -134,18 +218,6 @@ export default function Home() {
                     </p>
                 </a>
             </div>
-
-            <p
-                className="first-letter:float-left first-letter:mr-3
-  first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-  first-line:uppercase first-line:tracking-widest
-"
-            >
-                Well, let me tell you something, funny boy. You know that little
-                stamp, the one that says New York Public Library? Well that may
-                not mean anything to you, but that means a lot to me. One whole
-                hell of a lot.
-            </p>
 
             <div className="h-38 fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
                 <a
