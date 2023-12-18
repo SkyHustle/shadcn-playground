@@ -30,6 +30,7 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { ModeToggle } from "@/components/ui/mode-toggle"
 
 const users = [
     {
@@ -88,6 +89,7 @@ export default function CardsChat() {
 
     return (
         <div className="flex h-screen items-center justify-center">
+            <ModeToggle />
             <Card>
                 <CardHeader className="flex flex-row items-center">
                     <div className="flex items-center space-x-4">
