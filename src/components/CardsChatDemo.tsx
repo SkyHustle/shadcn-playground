@@ -61,7 +61,7 @@ const users = [
 
 type User = (typeof users)[number]
 
-export default function CardsChat() {
+export default function CardsChatDemo() {
     const [open, setOpen] = React.useState(false)
     const [selectedUsers, setSelectedUsers] = React.useState<User[]>([])
 
