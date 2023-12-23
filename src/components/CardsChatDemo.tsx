@@ -100,7 +100,7 @@ export default function CardsChatDemo() {
                                 Sofia Davis
                             </p>
                             <p className="text-sm text-muted-foreground">
-                                m@example.com
+                                make@example.com
                             </p>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function CardsChatDemo() {
                                 </Button>
                             </TooltipTrigger>
                             <TooltipContent sideOffset={10}>
-                                New message
+                                New message...
                             </TooltipContent>
                         </Tooltip>
                     </TooltipProvider>
